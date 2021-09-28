@@ -1,0 +1,11 @@
+.flex-grid {
+    display: flex;
+  }
+  
+.side-col {
+    flex: 1;
+  }
+
+.main-col {
+    flex: 4;
+}

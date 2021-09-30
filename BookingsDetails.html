@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav style="background-color: #a6bcc3e8;" class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img src="./images/ourLogo.svg" height='60px'>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
+                <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
+                <button class="btn btn-outline-primary" type="submit">Login</button>
+            </form>
+        </div>
+      </nav>
+      <div id="main-content" class="flex-grid">
+        <div class="side-col">
+            <h1>THIS IS WHERE YOU CAN ADD IMAGES ETC.</h1>
+        </div>
+        <div class="main-col">
+            <div class="section">
+              <h3>Booking details:</h3>
+              <div class="box" style="display: flex; column-gap: 3em;">
+                <button type="button" class="btn btn-secondary">
+                  <div>Economy Class</div>
+                  <div><b>$120.00</b></div>
+                </button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>Seat reservation:</h3>
+              <div></div>
+            </div>
+            
+            <div class="section">
+              <h3>In flight extras (optional):</h3>
+              <div>
+                <div>
+                  <label for="cookies">Cookies <b>$3.00</b></label>
+                  <input type="checkbox" id="cookies" name="cookies" value="cookies">
+                </div>
+                <div>
+                  <label for="fruit">Assorted fruit <b>$3.00</b></label>
+                  <input type="checkbox" id="fruit" name="fruit" value="fruit">
+                </div>
+                <div>
+                  <label for="c_wrap">Chicken wrap <b>$10.00</b></label>
+                  <input type="checkbox" id="c_wrap" name="c_wrap" value="c_wrap">
+                </div>
+                <div>
+                  <label for="veg_wrap">Vegetarian wrap <b>$8.00</b></label>
+                  <input type="checkbox" id="veg_wrap" name="veg_wrap" value="veg_wrap">
+                </div>
+              </div>
+            </div>
+
+            <div class="section">
+              <button type="button" class="btn btn-success">Pay now</button>
+            </div>
+        </div>
+        <div class="side-col">
+            <h1>THIS IS WHERE YOU CAN ADD IMAGES ETC.</h1>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>

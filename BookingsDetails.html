@@ -51,15 +51,33 @@
                   <div>Economy Class</div>
                   <div><b>$120.00</b></div>
                 </button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-secondary">
+                  <div>Premium Class</div>
+                  <div><b>$250.00</b></div>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <div>Business Class</div>
+                  <div><b>$800.00</b></div>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <div>First Class</div>
+                  <div><b>$1500.00</b></div>
+                </button>
               </div>
             </div>
 
             <div class="section">
               <h3>Seat reservation:</h3>
-              <div></div>
+              <div>
+                <label for="seat_choice">Seat choice:</label>
+                <select name="seat_choice" id="seat_choice">
+                  <option value="window">Window</option>
+                  <option value="aisle">Aisle</option>
+                  <option value="exit">Exit row</option>
+                  <option value="front">Front</option>
+                  <option value="back">Back</option>
+                </select>
+              </div>
             </div>
             
             <div class="section">

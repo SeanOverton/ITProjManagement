@@ -28,3 +28,64 @@
 .section{
   padding: 3em;
 }
+
+/* this is for the ads on side columns of template page */
+#ad1 {
+  margin-top: 20px;
+  position: relative;
+}
+
+#ad2 {
+  margin-top: 320px;
+  position: relative;
+}
+
+#ad3 {
+  margin-top: 620px;
+  position: relative;
+}
+
+.promo img{
+  width: 15em;
+  height: 20em;
+  /* height: 267px; */
+  /* width: auto; */
+  position: absolute;
+}
+
+.A {
+animation: animA 10s infinite alternate;
+}
+
+.B {
+animation: animB 10s infinite alternate;
+}
+
+@keyframes animA {
+  0%, 25% {
+    opacity: 0;
+    z-index: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  
+  100% {
+    opacity: 1;
+    z-index: 1
+  }
+}
+
+@keyframes animB {
+  0%,25% {
+    opacity: 1;
+    z-index: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+ 100% {
+    opacity: 0;
+    z-index: 0
+  }
+}

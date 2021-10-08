@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <title>BookingFlights.com</title>
+  </head>
+  <body>
+    <nav style="background-color: #a6bcc3e8;" class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img src="./images/ourLogo.svg" height='60px'>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
+                <input class="form-control me-2" type="text" placeholder="Password" aria-label="Password">
+                <button class="btn btn-outline-primary" type="submit">Login</button>
+            </form>
+        </div>
+      </nav>
+      <div id="main-content" class="flex-grid">
+        <div class="side-col">
+        </div>
+        <div class="main-col">
+            <h3>Checkout</h3>
+            <form>
+              <div class="form-group section">
+                <h5>Contact info</h5>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group section">
+                <h5>Billing info</h5>
+                <label for="exampleInputPassword1">Card name</label>
+                <input type="password" class="form-control" id="cardName" placeholder="card-name">
+                <label for="exampleInputPassword1">Card number</label>
+                <input type="password" class="form-control" id="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <label for="exampleInputPassword1">Expiry date</label>
+                <input type="password" class="form-control" id="expiryDate" placeholder="DD/MM">
+                <label for="exampleInputPassword1">CVC</label>
+                <input type="password" class="form-control" id="cvc" placeholder="cvc">
+              </div>
+            </form>
+            <div class="section">
+              <button type="submit" class="btn btn-success" onclick="alert('Your booking has been confirmed! Check your email for confirmation!'); location.href = './Home.html'">Pay now</button>
+            </div>
+        </div>
+        <div class="side-col">
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>

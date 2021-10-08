@@ -6,4 +6,4 @@ For anyone making a new page: recomend you start with the template found in dev 
 
 RULES:
 1) Work from dev branch
-2) Only pull request when you are ready to make changes to master. 
+2) Only pull request when you are ready to make safe working changes to master. 

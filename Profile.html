@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+    <script src="js/main.js"></script>
+
     <title>BookingFlights.com</title>
   </head>
-  <body>
+  <body onload="loadProfile();">
     <nav style="background-color: #a6bcc3e8;" class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <img src="./images/ourLogo.svg" height='60px'>
@@ -32,11 +33,11 @@
                 <a class="nav-link" href="./SignUp.html">Sign up</a>
               </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
-                <input class="form-control me-2" type="text" placeholder="Password" aria-label="Password">
-                <button class="btn btn-outline-primary" type="submit">Login</button>
-            </form>
+            <div class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username" id="login_username">
+              <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password" id="login_password">
+              <button class="btn btn-outline-primary" type="submit" onclick="login();">Login</button>
+            </div>
         </div>
       </nav>
       <div id="main-content" class="flex-grid">
@@ -58,8 +59,8 @@
             <h3>YOUR PROFILE</h3>
             <div class="section">
               <h5>Welcome back!</h5>
-              <p>Username: exampleUsername</p>
-              <p>Email: example@example.com</p>
+              <p>Username: <span id="username"></span></p>
+              <p>Email: <span id="email"></span></p>
             </div>
             <div class="section">
               <h5>Change password</h5>

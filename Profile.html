@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+    <script src="js/main.js"></script>
+
     <title>BookingFlights.com</title>
   </head>
-  <body>
+  <body onload="loadProfile();">
     <nav style="background-color: #a6bcc3e8;" class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <img src="./images/ourLogo.svg" height='60px'>
@@ -32,11 +33,11 @@
                 <a class="nav-link" href="./SignUp.html">Sign up</a>
               </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
-                <input class="form-control me-2" type="text" placeholder="Password" aria-label="Password">
-                <button class="btn btn-outline-primary" type="submit">Login</button>
-            </form>
+            <div class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username" id="login_username">
+              <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password" id="login_password">
+              <button class="btn btn-outline-primary" type="submit" onclick="login();">Login</button>
+            </div>
         </div>
       </nav>
       <div id="main-content" class="flex-grid">
@@ -54,47 +55,8 @@
             <img src="https://www.gohawaii.com/sites/default/files/styles/image_gallery_large/public/gallery-images/Discover-Hawaii-Guide-2019.jpg?itok=d25wylTb&timestamp=1549423479" class='B'>
           </div>
         </div>
-        <div class="main-col">
-            <h3>YOUR PROFILE</h3>
-            <div class="section">
-              <h5>Welcome back!</h5>
-              <p>Username: exampleUsername</p>
-              <p>Email: example@example.com</p>
-            </div>
-            <div class="section">
-              <h5>Change password</h5>
-                <label for="exampleInputEmail1">Old password</label>
-                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="old password">
-                <label for="exampleInputEmail1">New password</label>
-                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="new password">
-                <br/>
-                <button type="submit" class="btn btn-success" onclick="alert('Password successfully changed.');">Change password</button>
-            </div>
-            <div class="section">
-              <h3>Current Bookings</h3>
-              <div>
-                <div class="box2" style="display: flex;">
-                  <div style="flex: 1;">
-                    <h5>China</h5>
-                    <ul>
-                      <li>DEPARTING FROM: Melbourne</li>
-                      <li>DEPARTING DATE: 20/12/2021</li>
-                      <li>DEPARTING TIME: 11:00:00 AEST</li>
-                      <li>DURATION: 12 hours</li>
-                      <li>ARRIVAL TIME: 23:00:00</li>
-                    </ul>
-                  </div>
-                  <div style="flex: 1;">
-                    <h5>Details</h5>
-                    <ul>
-                      <li>CLASS: ECONOMY</li>
-                      <li>SEAT TYPE: WINDOW</li>
-                      <li>OPTIONAL EXTRAS: CHICKEN WRAP</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="main-col" id="main_content">
+            
         </div>
         <div class="side-col">
           <div  class="promo" id="ad1">
